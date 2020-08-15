@@ -1,0 +1,26 @@
+@import './style/iconfont.wxss'
+
+/* 初始化全局样式 */
+page,
+view,
+text,
+swiper,
+swiper-item,
+image,
+navigator {
+  padding   : 0;
+  margin    : 0;
+  box-sizing: border-box;
+}
+
+/* 定义全局样式 */
+page {
+  /* 定义主题颜色 */
+  --theme         : #E4393C;
+  /* 定义未选中颜色 */
+  --defaultColor  : #000;
+  /* 定义默认内边距 */
+  --p14           : 14rpx;
+  /* 定义默认字体大小 */
+  --deaultFontSize: 28rpx;
+}

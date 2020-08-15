@@ -1,0 +1,10 @@
+<view class="tab">
+	<!-- 导航标题 -->
+	<view class="tab-title">
+		<view class="title-item {{item.isAcitve?'active':''}}" wx:for="{{tabs}}" wx:key="id" bindtap="active" data-index="{{index}}"> {{item.name}} </view>
+	</view>
+	<!-- 内容区域 -->
+	<view class="tab-content">
+		<slot></slot>
+	</view>
+</view>

@@ -1,0 +1,64 @@
+<!-- 收货地址 -->
+<view class="cart">
+	<view class="choose-address">
+		<view class="user-info-row" wx:if="{{address}}">
+			<view class="user-info">
+				<view class="user-name">{{address.userName}}</view>
+				<view class="user-phone">{{address.telNumber}}</view>
+			</view>
+			<view class="user-address">{{address.provinceName+address.cityName+address.countyName+address.detailInfo}}</view>
+		</view>
+		<button type="primary" plain bindtap="handleChooseAddress" wx:else>收货地址</button>
+	</view>
+</view>
+
+<!-- 购物车内容 -->
+<view class="cart-content">
+	<view class="cart-title">购物车</view>
+	<view class="cart-main">
+		<block wx:if="{{cartList.length}}">
+			<view class="cart-item" wx:for="{{cartList}}" wx:key="goods_name">
+				<view class="checkbox-wrap">
+					<checkbox-group bindchange="handleItemCheckbox" data-index="{{index}}">
+						<checkbox color="#E4393C" checked="{{item.choose}}"></checkbox>
+					</checkbox-group>
+				</view>
+				<view class="img-wrap">
+					<image src="{{item.pics[0].pics_sma}}" mode="widthFix" />
+				</view>
+				<view class="goods-info-wrap">
+					<view class="goods-title">{{item.goods_name}}</view>
+					<view class="goods-info-bottom">
+						<view class="goods-price">￥{{item.goods_price * item.num}}</view>
+						<view class="goods-tools">
+							<view class="edit" size="mini" bindtap="editGoodsNum" data-index="- {{index}}">-</view>
+							<view class="num">{{item.num}}</view>
+							<view class="edit" size="mini" bindtap="editGoodsNum" data-index="+ {{index}}">+</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</block>
+		<block wx:else>
+			<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1597251490942&di=bf7290e4b6d41fbc0fbab2310a7cafaf&imgtype=0&src=http%3A%2F%2Fku.90sjimg.com%2Felement_origin_min_pic%2F17%2F05%2F23%2F0d2019a7ca7937adaf34a3b15fd7b92e.jpg" mode="widthFix" />
+		</block>
+	</view>
+</view>
+
+<!-- 合计结算 -->
+<view class="total-pay">
+	<view class="total-all-check">
+		<checkbox-group bindchange="handleAllCheckbox">
+			<checkbox color="#E4393C" checked="{{allChecked}}"></checkbox>
+			<text>全选</text>
+		</checkbox-group>
+	</view>
+	<view class="total-price">
+		<view class="txt">合计：</view>
+		<view class="price-num">
+			￥{{totalPrice}}
+			<text>包含运费</text>
+		</view>
+	</view>
+	<view class="pay-button" bindtap="handlePay">结算({{totalNum}})</view>
+</view>

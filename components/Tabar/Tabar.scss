@@ -1,0 +1,21 @@
+.tab {
+
+  .tab-title {
+    display         : flex;
+    background-color: #fff;
+
+    .title-item {
+      flex           : 1;
+      height         : 100rpx;
+      display        : flex;
+      justify-content: center;
+      align-items    : center;
+    }
+
+    .title-item.active {
+      color        : var(--theme);
+      border-bottom: 5rpx solid currentColor;
+    }
+  }
+
+}

@@ -1,0 +1,38 @@
+page {
+  height: 100%;
+  background-color: #eee;
+}
+
+.search-container .search-input-wrap {
+  height: 90rpx;
+  background-color: #fff;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+}
+
+.search-container .search-input-wrap input {
+  flex: 1;
+  border-radius: 10rpx;
+  padding: 8rpx 0 12rpx 30rpx;
+  margin: 0 30rpx;
+  background-color: #e3e3e5;
+}
+
+.search-container .search-input-wrap button {
+  padding: 0 30rpx 0 0;
+  border: none;
+}
+
+.search-container .search-content-wrap .search-item {
+  height: 90rpx;
+  color: gray;
+  font-size: 28rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 90rpx;
+  background-color: #fff;
+  margin-top: 4rpx;
+  padding: 0 34rpx;
+}

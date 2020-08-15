@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Tabar": "../../components/Tabar/Tabar"
+  },
+  "navigationBarTitleText": "收藏的商品"
+}

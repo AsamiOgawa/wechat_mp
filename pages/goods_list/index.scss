@@ -1,0 +1,41 @@
+.default-container {
+
+  navigator {
+    display      : flex;
+    border-bottom: 3rpx solid #ddd;
+
+    .goods-img-item {
+      flex           : 2;
+      display        : flex;
+      justify-content: center;
+      align-items    : center;
+
+      image {
+        width: 70%;
+      }
+    }
+
+    .goods-info-item {
+      flex           : 3;
+      display        : flex;
+      flex-direction : column;
+      justify-content: space-around;
+
+      .goods-name {
+        display           : -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow          : hidden;
+        -webkit-line-clamp: 2;
+      }
+
+      .goods-price {
+        color      : var(--theme);
+        display    : flex;
+        align-items: center;
+        font-size  : 32rpx;
+      }
+    }
+
+  }
+
+}

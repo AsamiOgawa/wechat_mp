@@ -1,0 +1,70 @@
+Page {
+  font-size: var(--deaultFontSize);
+  background-color: #eee;
+}
+
+.collect-main .collect-title {
+  margin: 34rpx 0;
+}
+
+.collect-main .collect-title text {
+  border: 2rpx solid #fff;
+  background-color: #fff;
+  padding: 16rpx;
+  margin-left: 16rpx;
+}
+
+.collect-main .collect-title text.active {
+  color: #fff;
+  background-color: var(--theme);
+}
+
+.collect-main .collect-content .collect-item {
+  display: flex;
+  margin-top: 10rpx;
+  height: 220rpx;
+  background-color: #fff;
+}
+
+.collect-main .collect-content .collect-item .img-wrap {
+  flex: 3;
+}
+
+.collect-main .collect-content .collect-item .img-wrap image {
+  width: 86%;
+}
+
+.collect-main .collect-content .collect-item .goods-info-wrap {
+  flex: 6;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 20rpx;
+}
+
+.collect-main .collect-content .collect-item .goods-info-wrap .goods-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 30rpx;
+  color: #000;
+}
+
+.collect-main .collect-content .collect-item .goods-info-wrap .goods-info-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collect-main .collect-content .collect-item .goods-info-wrap .goods-info-bottom .goods-price {
+  color: var(--theme);
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.collect-main .collect-content .collect-item .img-wrap,
+.collect-main .collect-content .collect-item .goods-info-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

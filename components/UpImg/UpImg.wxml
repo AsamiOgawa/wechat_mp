@@ -1,0 +1,4 @@
+<view class="img-content">
+	<image class="img-item" src="{{src}}" />
+	<icon class="cancle-item" type="clear" size="20" color="#E4393C"></icon>
+</view>

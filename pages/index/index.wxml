@@ -1,0 +1,31 @@
+<!-- 搜索区域 -->
+<SearchInput></SearchInput>
+<!-- 轮播图区域 -->
+<swiper autoplay circular indicator-dots interval="3000" indicator-active-color="var(--theme)">
+	<swiper-item wx:for="{{swiperList}}" wx:key="index">
+		<navigator url="{{item.navigator_url}}" open-type="navigate">
+			<image src="{{item.image_src}}" mode="widthFix" lazy-load="false" />
+		</navigator>
+	</swiper-item>
+</swiper>
+<!-- 导航区域 -->
+<view class="navigation-box">
+	<navigator wx:for="{{navigationList}}" wx:key="name" url="item.navigator_url" open-type="navigate">
+		<image src="{{item.image_src}}" mode="widthFix" lazy-load="true" />
+	</navigator>
+</view>
+<!-- 楼层区域 -->
+<view class="floor">
+	<view class="floor-item" wx:for="{{floorList}}" wx:key="index">
+		<!-- 楼层标题 -->
+		<view class="floor-title">
+			<image src="{{item.floor_title.image_src}}" mode="widthFix" lazy-load="true" />
+		</view>
+		<!-- 楼层内容 -->
+		<view class="floor-product">
+			<navigator url="{{subItem.navigator_url}}" open-type="navigate" wx:for="{{item.product_list}}" wx:for-item="subItem" wx:for-index="subIndex" wx:key="name">
+				<image src="{{subItem.image_src}}" mode="{{subIndex===0?'widthFix':''}}" />
+			</navigator>
+		</view>
+	</view>
+</view>

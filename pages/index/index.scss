@@ -1,0 +1,66 @@
+page {
+  color    : var(--theme);
+  /* 默认字体大小为14px，即28rpx */
+  font-size: 28rpx;
+
+  swiper {
+    height: 340rpx;
+
+    swiper-item {
+      navigator {
+        height: 100%;
+
+        image {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .navigation-box {
+    display: flex;
+
+    navigator {
+      flex   : 1;
+      padding: 25rpx;
+
+      image {
+        width: 100%;
+      }
+    }
+  }
+
+  .floor {
+    .floor-item {
+      .floor-title {
+        padding: 10rpx 0;
+
+        image {
+          width: 100%;
+        }
+      }
+
+      .floor-product {
+        overflow: hidden;
+
+        navigator {
+          width: 33.33%;
+          float: left;
+
+          image {
+            width: 100%;
+          }
+        }
+
+        navigator+navigator {
+          border-left: 10rpx solid #fff;
+
+          image {
+            height: 33vw * 386 / 232 / 2;
+            width : 100%;
+          }
+        }
+      }
+    }
+  }
+}

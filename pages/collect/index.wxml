@@ -1,0 +1,28 @@
+<Tabar tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+	<block wx:if="{{tabs[0].isAcitve}}">
+
+		<view class="collect-main">
+			<view class="collect-title">
+				<text class="active">全部</text>
+				<text>正在热卖</text>
+				<text>即将上线</text>
+			</view>
+			<view class="collect-content">
+				<navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" class="collect-item" wx:for="{{collect}}" wx:key="goods_id">
+					<view class="img-wrap">
+						<image src="{{item.pics[0].pics_sma}}" mode="widthFix" />
+					</view>
+					<view class="goods-info-wrap">
+						<view class="goods-title">{{item.goods_name}}</view>
+						<view class="goods-info-bottom">
+							<view class="goods-price">￥{{item.goods_price}}</view>
+						</view>
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</block>
+	<block wx:elif="{{tabs[1].isAcitve}}">2</block>
+	<block wx:elif="{{tabs[2].isAcitve}}">3</block>
+	<block wx:else>4</block>
+</Tabar>

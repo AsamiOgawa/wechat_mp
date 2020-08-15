@@ -1,0 +1,61 @@
+@charset "UTF-8";
+page {
+  color: var(--theme);
+  /* 默认字体大小为14px，即28rpx */
+  font-size: 28rpx;
+}
+
+page swiper {
+  height: 340rpx;
+}
+
+page swiper swiper-item navigator {
+  height: 100%;
+}
+
+page swiper swiper-item navigator image {
+  width: 100%;
+}
+
+page .navigation-box {
+  display: flex;
+}
+
+page .navigation-box navigator {
+  flex: 1;
+  padding: 25rpx;
+}
+
+page .navigation-box navigator image {
+  width: 100%;
+}
+
+page .floor .floor-item .floor-title {
+  padding: 10rpx 0;
+}
+
+page .floor .floor-item .floor-title image {
+  width: 100%;
+}
+
+page .floor .floor-item .floor-product {
+  overflow: hidden;
+}
+
+page .floor .floor-item .floor-product navigator {
+  width: 33.33%;
+  float: left;
+}
+
+page .floor .floor-item .floor-product navigator image {
+  width: 100%;
+}
+
+page .floor .floor-item .floor-product navigator + navigator {
+  border-left: 10rpx solid #fff;
+}
+
+page .floor .floor-item .floor-product navigator + navigator image {
+  height: 27.45259vw;
+  width: 100%;
+}

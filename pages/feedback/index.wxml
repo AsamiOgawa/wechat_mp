@@ -1,0 +1,27 @@
+<Tabar tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+	<block wx:if="{{tabs[0].isAcitve}}">
+		<view class="feedback-main">
+			<view class="feedback-title">问题类型</view>
+			<view class="feedback-tip">
+				<text>功能建议</text>
+				<text>购买问题</text>
+				<text>物流缓慢</text>
+				<text>其他</text>
+			</view>
+			<view class="feedback-content">
+				<textarea value="{{textValue}}" placeholder="请描述您的问题或建议" bindinput="handleTextInput"></textarea>
+				<view class="feedback-img">
+					<button bindtap="handleImg">+</button>
+					<view class="img-item">
+						<UpImg src="{{item}}" wx:for="{{upImg}}" wx:key="*this" bindtap="handleCancleImg" data-index="{{index}}"></UpImg>
+					</view>
+				</view>
+			</view>
+			<view class="feedback-submit">
+				<button type="warn" bindtap="handleSubmit">提交</button>
+			</view>
+		</view>
+	</block>
+
+	<block wx:else>2</block>
+</Tabar>

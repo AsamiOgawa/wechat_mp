@@ -1,0 +1,82 @@
+page {
+  font-size       : 28rpx;
+  background-color: #eee;
+}
+
+Tabar {
+  background-color: #fff;
+}
+
+.feedback-main {
+  .feedback-title {
+    padding: 20rpx;
+  }
+
+  .feedback-tip {
+    display   : flex;
+    flex-wrap : wrap;
+    margin-top: 18rpx;
+
+    text {
+      width           : 30%;
+      color           : gray;
+      padding         : 18rpx 22rpx;
+      margin          : 0 0 20rpx 20rpx;
+      background-color: #fff;
+      display         : flex;
+      justify-content : center;
+      align-items     : center;
+    }
+  }
+
+  .feedback-content {
+    display        : flex;
+    justify-content: center;
+    position       : relative;
+
+    textarea {
+      width           : 90%;
+      height          : 500rpx;
+      background-color: #fff;
+      box-shadow      : 1rpx 1rpx 10rpx #dedede;
+      padding         : 21rpx;
+    }
+
+    .feedback-img {
+      display    : flex;
+      align-items: center;
+      position   : absolute;
+      left       : 40rpx;
+      bottom     : 20rpx;
+      z-index    : 6;
+
+      button {
+        width      : 90rpx;
+        height     : 90rpx;
+        padding    : 0;
+        color      : #888;
+        font-size  : 50rpx;
+        line-height: 90rpx;
+      }
+
+      .img-item {
+        display  : flex;
+        flex-wrap: wrap;
+
+        UpImg {
+          margin: 0 0 20rpx 20rpx;
+        }
+      }
+
+    }
+  }
+
+  .feedback-submit {
+    margin-top: 20rpx;
+    text-align: center;
+
+    button {
+      width: 96%;
+    }
+  }
+}

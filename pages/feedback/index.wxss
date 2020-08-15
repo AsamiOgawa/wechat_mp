@@ -1,0 +1,79 @@
+page {
+  font-size: 28rpx;
+  background-color: #eee;
+}
+
+Tabar {
+  background-color: #fff;
+}
+
+.feedback-main .feedback-title {
+  padding: 20rpx;
+}
+
+.feedback-main .feedback-tip {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 18rpx;
+}
+
+.feedback-main .feedback-tip text {
+  width: 30%;
+  color: gray;
+  padding: 18rpx 22rpx;
+  margin: 0 0 20rpx 20rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-main .feedback-content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.feedback-main .feedback-content textarea {
+  width: 90%;
+  height: 500rpx;
+  background-color: #fff;
+  box-shadow: 1rpx 1rpx 10rpx #dedede;
+  padding: 21rpx;
+}
+
+.feedback-main .feedback-content .feedback-img {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 40rpx;
+  bottom: 20rpx;
+  z-index: 6;
+}
+
+.feedback-main .feedback-content .feedback-img button {
+  width: 90rpx;
+  height: 90rpx;
+  padding: 0;
+  color: #888;
+  font-size: 50rpx;
+  line-height: 90rpx;
+}
+
+.feedback-main .feedback-content .feedback-img .img-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedback-main .feedback-content .feedback-img .img-item UpImg {
+  margin: 0 0 20rpx 20rpx;
+}
+
+.feedback-main .feedback-submit {
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.feedback-main .feedback-submit button {
+  width: 96%;
+}

@@ -1,0 +1,1 @@
+<button open-type="getUserInfo" bindgetuserinfo="bindGetuserinfo" type="warn" plain>授权登录</button>

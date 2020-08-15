@@ -1,0 +1,18 @@
+.img-content {
+  width   : 90rpx;
+  height  : 90rpx;
+  position: relative;
+}
+
+.img-content .img-item {
+  width        : 100%;
+  height       : 100%;
+  border-radius: 6rpx;
+}
+
+.img-content .cancle-item {
+  position : absolute;
+  top      : 0;
+  right    : 0;
+  transform: translate(50%, -50%);
+}

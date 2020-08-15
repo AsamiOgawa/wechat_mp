@@ -1,0 +1,79 @@
+<!-- 用户头像区域 -->
+<view class="user-info">
+	<view wx:if="{{userInfo.nickName}}" class="user-img-wrap">
+		<image class="user-bg" mode="widthFix" src="{{userInfo.avatarUrl}}"></image>
+		<view class="user-info-content">
+			<view class="user-avatar">
+				<image mode="widthFix" src="{{userInfo.avatarUrl}}" />
+			</view>
+			<view class="user-nickname">{{userInfo.nickName}}</view>
+		</view>
+	</view>
+	<button wx:else type="warn" bindtap="handleLoginButton" plain>登录</button>
+</view>
+
+<!-- 用户历史区域 -->
+<view class="user-content">
+	<view class="main">
+		<!-- 历史收藏记录 -->
+		<view class="history-wrap">
+			<navigator url="">
+				<view class="num">0</view>
+				<view class="text">收藏的店铺</view>
+			</navigator>
+			<navigator url="/pages/collect/index">
+				<view class="num">{{collectNum}}</view>
+				<view class="text">收藏的商品</view>
+			</navigator>
+			<navigator url="">
+				<view class="num">0</view>
+				<view class="text">关注的商品</view>
+			</navigator>
+			<navigator url="">
+				<view class="num">0</view>
+				<view class="text">我的足迹</view>
+			</navigator>
+		</view>
+		<!-- 订单状况 -->
+		<view class="order-wrap">
+			<view class="order-title">我的订单</view>
+			<view class="order-content">
+				<navigator url="">
+					<i class="iconfont iconinstruction"></i>
+					<view class="text">全部订单</view>
+				</navigator>
+				<navigator url="">
+					<i class="iconfont iconphonebill"></i>
+					<view class="text">待付款</view>
+				</navigator>
+				<navigator url="">
+					<i class="iconfont iconcart"></i>
+					<view class="text">待收货</view>
+				</navigator>
+				<navigator url="">
+					<i class="iconfont iconevitarepayment"></i>
+					<view class="text">退款/退货</view>
+				</navigator>
+			</view>
+		</view>
+		<!-- 收货地址 -->
+		<view class="address-wrap">
+			<navigator url="">收货地址管理</navigator>
+		</view>
+		<!-- 联系反馈 -->
+		<view class="contact-wrap">
+			<view class="contact-content">
+				<view class="text">联系客服</view>
+				<view class="contact-phone">1008611-12-5</view>
+			</view>
+			<view class="suggest-content">
+				<navigator url="/pages/feedback/index">意见反馈</navigator>
+			</view>
+			<view class="about-content">关于我们</view>
+		</view>
+		<!-- 推广 -->
+		<view class="promote wrap">
+			<navigator url="">推广有奖</navigator>
+		</view>
+	</view>
+</view>

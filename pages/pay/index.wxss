@@ -1,0 +1,154 @@
+page {
+  height: 100vh;
+  padding-bottom: 92rpx;
+  position: relative;
+}
+
+.cart {
+  margin-bottom: 20rpx;
+}
+
+.cart .choose-address {
+  display: flex;
+  justify-content: center;
+}
+
+.cart .choose-address .user-info-row {
+  width: 100%;
+  display: flex;
+  margin-top: 20rpx;
+  padding: 0 15rpx;
+  font-size: 28rpx;
+  flex-direction: column;
+}
+
+.cart .choose-address .user-info-row .user-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.cart .choose-address button {
+  margin-top: 40rpx;
+  width: 80%;
+}
+
+.cart-content .cart-title {
+  height: 90rpx;
+  font-size: 38rpx;
+  line-height: 90rpx;
+  border-top: 2rpx solid var(--theme);
+  padding: 0 15rpx;
+}
+
+.cart-content .cart-main {
+  border-top: 2rpx solid var(--theme);
+  overflow: hidden;
+}
+
+.cart-content .cart-main .cart-item {
+  display: flex;
+  margin-top: 10rpx;
+  height: 220rpx;
+  border-bottom: 1rpx solid #999;
+}
+
+.cart-content .cart-main .cart-item .img-wrap,
+.cart-content .cart-main .cart-item .goods-info-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-content .cart-main .cart-item .img-wrap {
+  flex: 3;
+}
+
+.cart-content .cart-main .cart-item .img-wrap image {
+  width: 86%;
+}
+
+.cart-content .cart-main .cart-item .goods-info-wrap {
+  flex: 6;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 20rpx;
+}
+
+.cart-content .cart-main .cart-item .goods-info-wrap .goods-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 30rpx;
+  color: #000;
+}
+
+.cart-content .cart-main .cart-item .goods-info-wrap .goods-info-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-content .cart-main .cart-item .goods-info-wrap .goods-info-bottom .goods-price {
+  color: var(--theme);
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.cart-content .cart-main .cart-item .goods-info-wrap .goods-info-bottom .goods-tools {
+  display: flex;
+  width: 42%;
+  justify-content: flex-end;
+}
+
+.cart-content .cart-main .cart-item .goods-info-wrap .goods-info-bottom .goods-tools .num {
+  margin: 0 10rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.total-pay {
+  width: 100vw;
+  height: 90rpx;
+  display: flex;
+  border-top: 2rpx solid #fafafa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.total-pay .total-price {
+  flex: 3;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 32rpx;
+}
+
+.total-pay .total-price .txt {
+  padding-top: 1rpx;
+}
+
+.total-pay .total-price .price-num {
+  display: flex;
+  flex-direction: column;
+  font-size: 38rpx;
+  color: var(--theme);
+}
+
+.total-pay .total-price .price-num text {
+  font-size: 24rpx;
+  color: #000;
+  text-align: right;
+}
+
+.total-pay .pay-button {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--theme);
+  font-size: 36rpx;
+  color: #fff;
+}

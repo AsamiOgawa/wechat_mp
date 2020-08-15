@@ -1,0 +1,17 @@
+.tab .tab-title {
+  display: flex;
+  background-color: #fff;
+}
+
+.tab .tab-title .title-item {
+  flex: 1;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab .tab-title .title-item.active {
+  color: var(--theme);
+  border-bottom: 5rpx solid currentColor;
+}
